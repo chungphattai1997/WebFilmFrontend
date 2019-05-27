@@ -49,7 +49,7 @@
 </div> -->
 
 
-<div class="content">
+<!-- <div class="content">
   <div class="signup-form">
     <form class="form-horizontal">
       <div class="col-xs-8 col-xs-offset-4">
@@ -84,7 +84,33 @@
         <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
       </div>
     </form>
-    <div class="text-center">Already have an account? <a href="#" [routerLink]="['/sign-in']">Login here</a></div>
+    <div class="text-center">Already have an account? <a routerLink="/login/sign-in">Login here</a></div>
   </div>
+</div> -->
 
+
+<div class="my-form">
+  <form>
+    <h2>Sign Up</h2>
+    <p class="lead">It's free and hardly takes more than 30 seconds.</p>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" class="form-control" name="email" required="required">
+    </div>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" name="username" required="required">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" name="password" required="required">
+    </div>
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" class="form-control" name="confirm_password" required="required">
+    </div>
+    <button type="submit" class="btn">Sign Up</button>
+  </form>
+  <div class="text-center footer">Already have an account? <a routerLink="/login/sign-in">Login here</a></div>
 </div>

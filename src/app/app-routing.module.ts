@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', loadChildren: () => HomeModule },
   { path: 'home', loadChildren: () => HomeModule },
   { path: 'admin', loadChildren: () => AdminModule },
-  // { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
