@@ -1,9 +1,25 @@
+<!-- <div>
+  <form #formSignIn="ngForm" (ngSubmit)="signIn(formSignIn.value)">
+    <div class="main-login-form">
+      <div class="login-group">
+        <div class="form-group">
+          <input ngModel #Username type="text" class="form-control" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+          <input ngModel #Password type="password" class="form-control" name="password" placeholder="password">
+        </div>
+      </div>
+      <button class="btn btn-success" type="submit">Sign in</button>
+    </div>
+  </form>
+</div> -->
+
+
 <div class="content">
   <div class="signup-form">
     <form class="form-horizontal">
       <div class="col-xs-8 col-xs-offset-4">
-        <h2>Sign Up</h2>
-        <p class="lead">It's free and hardly takes more than 30 seconds.</p>
+        <h2>Sign In</h2>
       </div>
       <div class="form-group">
         <label class="control-label col-xs-4">Username</label>
@@ -11,26 +27,21 @@
           <input type="text" class="form-control" name="username" required="required">
         </div>
       </div>
-      <div class="form-group">
-        <label class="control-label col-xs-4">Email Address</label>
-        <div class="col-xs-8">
-          <input type="email" class="form-control" name="email" required="required">
-        </div>
-      </div>
+ 
       <div class="form-group">
         <label class="control-label col-xs-4">Password</label>
         <div class="col-xs-8">
           <input type="password" class="form-control" name="password" required="required">
         </div>
       </div>
+   
       <div class="form-group">
-        <label class="control-label col-xs-4">Confirm Password</label>
-        <div class="col-xs-8">
-          <input type="password" class="form-control" name="confirm_password" required="required">
+        <div class="col-xs-8 col-xs-offset-4">
+          <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
         </div>
       </div>
     </form>
-    <div class="text-center">Already have an account? <a href="#" [routerLink]="['/sign-in']">Login here</a></div>
+    <div class="text-center">Already have an account? <a href="#" [routerLink]="['/sign-up']">Sign up here</a></div>
   </div>
 
 </div>
