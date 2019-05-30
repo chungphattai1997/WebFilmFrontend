@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
-import { Routes, RouterModule } from '@angular/router';
-import { LoginModule } from './login/login.module';
-
-const homeRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', loadChildren: () => LoginModule }
-];
+import { HomeLayoutComponent } from './home-layout/home-layout.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-  ],
+  declarations: [HomeLayoutComponent, HeaderComponent, FooterComponent],
   imports: [
-    CommonModule,
-    RouterModule.forChild(homeRoutes),
-  ],
+    CommonModule
+  ]
 })
 export class HomeModule { }

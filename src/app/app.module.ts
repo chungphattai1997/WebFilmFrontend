@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminModuleModule } from './page/admin/admin-module.module';
-import { HomeModuleModule } from './page/home/home-module.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AdminModule } from './page/admin/admin.module';
+import { HomeModule } from './page/home/home.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModuleModule,
-    HomeModuleModule,
-    HttpClientModule
+    AdminModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

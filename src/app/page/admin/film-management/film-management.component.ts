@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from 'src/app/core/services/movie.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-film-management',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmManagementComponent implements OnInit {
 
-  constructor() { }
+  movieArray: Array<any> = [];
+  idFilm: number;
+
+  constructor(
+    private movieService: MovieService,
+  ) { }
 
   ngOnInit() {
+    this.getMovies();
   }
+
+  getMovies() {
+    this.movieService.layDanhSachPhim().subscribe((data) => {
+      this.movieArray = data;
+      console.log(this.movieArray);
+    })
+  }
+
 
 }
