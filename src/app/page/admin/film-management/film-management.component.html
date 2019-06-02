@@ -7,7 +7,7 @@
             <i class="fa fa-list-alt mr-2"></i>
             Danh sách phim
           </h5>
-          <button type="button" class="btn btn-success" routerLink="/admin/movieadd">
+          <button type="button" class="btn btn-success" routerLink="/film-management/add">
             <i class="fa fa-plus"></i>
             Thêm</button>
         </div>
@@ -33,7 +33,7 @@
               <td class="w-50 text-justify align-middle">{{movie.MoTa}}</td>
               <td class="align-middle">
                 <div class="btn-group">
-                  <button class="btn btn-primary" title="Sửa Phim" routerLink="/admin/movieedit/{{movie.MaPhim}}">
+                  <button class="btn btn-primary" title="Sửa Phim" routerLink="/film-management/edit/{{movie.MaPhim}}">
                     <i class="fa fa-edit"></i>
                   </button>
                   <button class="btn btn-danger" title="Xóa Phim" (click)="acceptDelete(movie.MaPhim,movie.TenPhim)">

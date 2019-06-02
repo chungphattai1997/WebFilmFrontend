@@ -18,6 +18,7 @@ const adminRoutes: Routes = [
       { path: 'user-management', component: UserManagementComponent },
       { path: 'film-management', component: FilmManagementComponent },
       { path: 'film-management/add', component: FilmAddComponent },
+      { path: 'film-management/edit/:id', component: FilmEditComponent },
       { path: 'category-management', component: CategoryManagementComponent },
 
     ]
